@@ -1,0 +1,20 @@
+{
+  "name": "my_package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bryanp2033/Bio-Find-NF.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bryanp2033/Bio-Find-NF/issues"
+  },
+  "homepage": "https://github.com/Bryanp2033/Bio-Find-NF#readme"
+}
