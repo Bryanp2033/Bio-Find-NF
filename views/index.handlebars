@@ -26,7 +26,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="/" method="GET">
+        <form action="/login" method="GET">
             <div class="form-group">
                 <label for="username">Name</label>
                 <input class="form-control" type="text" id="user-form-control" placeholder="John Doe"/>
@@ -35,10 +35,10 @@
                 <label for="password">Password</label>
                 <input class="form-control" type="password" id="password-form-control"/>
             </div>
-        </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <div class="modal-footer text-center">
+        <button type="button" class="btn btn-primary">Submit</button>
+        </form>
       </div>
     </div>
   </div>
@@ -56,19 +56,27 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="/" method="GET">
+        <form action="/sign-up" method="GET">
             <div class="form-group">
                 <label for="username">Name</label>
                 <input class="form-control" type="text" id="user-form-control" placeholder="John Doe"/>
             </div>
             <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" type="text" id="email-form-control" />
+            </div>
+            <div class="form-group">
                 <label for="password">Password</label>
+                <input class="form-control" type="password" id="passion-form-control" />
+            </div>
+            <div class="form-group">
+                <label for="password">Vertify Password</label>
                 <input class="form-control" type="password" id="password-form-control"/>
             </div>
-        </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary">Sign Up!</button>
+        </form>
       </div>
     </div>
   </div>
