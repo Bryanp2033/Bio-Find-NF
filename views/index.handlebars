@@ -7,8 +7,8 @@
         <div class="form-group text-center" id="main-form">
             <button class="btn btn-info" data-toggle="modal" data-target="#LoginModal">Login</button>
             <button class="btn btn-info" data-toggle="modal" data-target="#SignupModal">Sign Up</button>
-            <form action="" post="POST">
-            <button class="btn btn-info">Login as Guest</button>
+            <form action="/guest" post="POST">
+            <a class="btn btn-info">Login as Guest</a>
             </form> 
         </div>
     </div>
@@ -29,11 +29,11 @@
         <form action="/login" method="GET">
             <div class="form-group">
                 <label for="username">Name</label>
-                <input class="form-control" type="text" id="user-form-control" placeholder="John Doe"/>
+                <input class="form-control" type="text" id="name-form-control" placeholder="John Doe"/>
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input class="form-control" type="password" id="password-form-control"/>
+                <input class="form-control" type="password" id="login-password-form-control"/>
             </div>
       </div>
       <div class="modal-footer text-center">
@@ -56,7 +56,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="/sign-up" method="GET">
+        <form action="/signup" method="GET">
             <div class="form-group">
                 <label for="username">Name</label>
                 <input class="form-control" type="text" id="user-form-control" placeholder="John Doe"/>
@@ -67,18 +67,77 @@
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input class="form-control" type="password" id="passion-form-control" />
+                <input class="form-control" type="password" id="signup-password-form-control" />
             </div>
             <div class="form-group">
                 <label for="password">Vertify Password</label>
-                <input class="form-control" type="password" id="password-form-control"/>
+                <input class="form-control" type="password" id="signup-vertify-password-form-control"/>
             </div>
+            <button type="button" class="btn btn-primary" href="/signup" id="signup-button">Sign Up!</button>
+        </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Sign Up!</button>
-        </form>
+          <div id="errors"></div>
       </div>
     </div>
   </div>
 </div>
 
+<script>
+    $(document).on("click","#signup-button", function(event){
+        event.preventDefault();
+
+        var name = $("#user-form-control").val().trim();
+        var emails = $("#email-form-control").val();
+        var password = $("#signup-password-form-control").val();
+        var passwordV = $("#signup-vertify-password-form-control").val();
+        
+        if(password != passwordV){
+            $("#errors").empty();
+            var div = $("<div class='alert alert-danger'>")
+            var button = $('<button type="button" class="close" data-dismiss="alert" aria-label="Close">')
+                var span = $('<span aria-hidden="true">&times;</span>');
+            $(button).append(span);
+            var alert = $("<p><strong>Error!</strong> Passwords don't match! Please try again.</p>");
+            $(div).append(button,alert)
+            $("#errors").append(div)
+        } else if(!validateEmail(emails)){
+            $("#errors").empty();
+            var div = $("<div class='alert alert-danger'>")
+            var button = $('<button type="button" class="close" data-dismiss="alert" aria-label="Close">')
+                var span = $('<span aria-hidden="true">&times;</span>');
+            $(button).append(span);
+            var alert = $("<p><strong>Error!</strong> Please enter a valid email.</p>");
+            $(div).append(button,alert)
+            $("#errors").append(div)
+        } else if(password != passwordV && !validateEmail(emails)){
+            $("#errors").empty();
+            var div = $("<div class='alert alert-danger'>")
+            var button = $('<button type="button" class="close" data-dismiss="alert" aria-label="Close">')
+                var span = $('<span aria-hidden="true">&times;</span>');
+            $(button).append(span);
+            var alert = $("<p><strong>Error!</strong> Please enter a valid email and make sure passwords match.</p>");
+            $(div).append(button,alert)
+            $("#errors").append(div)
+        } else{
+
+            $.ajax({
+                method: "GET",
+                url: "/signup",
+                data: {
+                    name: name,
+                    email: emails,
+                    password: password
+                }
+            }).done(function(data) {
+                console.log(data)
+            });
+        }
+    })
+
+    function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+    }
+
+</script>
