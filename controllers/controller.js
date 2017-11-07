@@ -22,8 +22,18 @@ router.get("/guest", function(req, res){
     res.render("search")
 })
 
+router.get("/guest/:name", function(req, res){
+    console.log(req.params.name)
+})
+
 router.get("/eraone", function(req, res){
-    history.ByDate(function(data){
+    history.ByDateOne(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/eratwo", function(req, res){
+    history.ByDateTwo(function(data){
         res.send(data);
     })
 })

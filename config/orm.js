@@ -88,7 +88,7 @@ var orm ={
             cb(result);
         });
     },
-    ByDate: function (cb){
+    ByDateOne: function (cb){
         var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN 1700 AND 1800);";
         console.log("ORM Searching for: " + queryString);
 
@@ -96,9 +96,16 @@ var orm ={
             if(err) throw err;
             cb(result);
         });
+    },
+    ByDateTwo: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN 1600 AND 1700);";
+        console.log("ORM Searching for: " + queryString);
 
-
-    }
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
 }
 // Object for all our SQL statement functions. 
 

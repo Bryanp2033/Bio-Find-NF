@@ -1,8 +1,13 @@
 var orm = require("../config/orm.js");
 
 var history = {
-    ByDate: function(cb){
-        orm.ByDate(function(res){
+    ByDateOne: function(cb){
+        orm.ByDateOne(function(res){
+            cb(res);
+        });
+    },
+    ByDateTwo: function(cb){
+        orm.ByDateTwo(function(res){
             cb(res);
         });
     }
