@@ -37,5 +37,20 @@ router.get("/eratwo", function(req, res){
         res.send(data);
     })
 })
+router.get("/erathree", function(req, res){
+    history.ByDateThree(function(data){
+        res.send(data);
+    })
+})
+router.get("/erafour", function(req, res){
+    history.ByDateFour(function(data){
+        res.send(data);
+    })
+})
+router.get("/erafive", function(req, res){
+    history.ByDateFive(function(data){
+        res.send(data);
+    })
+})
 
 module.exports = router;

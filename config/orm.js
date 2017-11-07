@@ -106,6 +106,33 @@ var orm ={
             cb(result);
         });
     },
+    ByDateThree: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN 1500 AND 1600);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateFour: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN 1400 AND 1500);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateFive: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN 1300 AND 1400);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
 }
 // Object for all our SQL statement functions. 
 

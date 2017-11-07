@@ -10,7 +10,22 @@ var history = {
         orm.ByDateTwo(function(res){
             cb(res);
         });
-    }
+    },
+    ByDateThree: function(cb){
+        orm.ByDateThree(function(res){
+            cb(res);
+        });
+    },
+    ByDateFour: function(cb){
+        orm.ByDateFour(function(res){
+            cb(res);
+        });
+    },
+    ByDateFive: function(cb){
+        orm.ByDateFive(function(res){
+            cb(res);
+        });
+    },
 }
 
 module.exports = history;
