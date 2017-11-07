@@ -1,5 +1,5 @@
 // Import MySQL connection.
-const connection = require("../config/connection.js");
+const connection = require("./connection.js");
 
 // Helper function for SQL syntax.???
 function printQuestionMarks(num) {
@@ -76,18 +76,29 @@ var orm ={
     * @param {any} val - Value of the condition being searched for
     * @param {function} cb - Callback Function
     */
-    allBy2: function (table, cond, cond2, val, cb) {
+    allBy2: function (table, cond, cond2, vals, cb) {
         var condition = cond;
         var condition2 = cond2;        
         var queryString = "SELECT * FROM " + table + " WHERE " + condition + " = ? AND " + condition2 + " = ?;";
 
         console.log("ORM Searching for: " + queryString);
  
-        connection.query(queryString, val, function (err, result) {
+        connection.query(queryString, vals, function (err, result) {
             console.log("ORM Result", result);
             cb(result);
         });
     },
+    ByDate: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN 1700 AND 1800);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+
+
+    }
 }
 // Object for all our SQL statement functions. 
 

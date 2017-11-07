@@ -4,7 +4,7 @@
 -- -----------------------------------------------------
 
 -- Use database
-USE 'History';
+USE "History";
 
 -- Users Table
 CREATE TABLE IF NOT EXISTS `users`(

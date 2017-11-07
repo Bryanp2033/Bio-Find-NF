@@ -2,6 +2,7 @@
 var express = require("express")
 var router = express.Router();
 var user = require("../models/user.js");
+var history = require("../models/history")
 
 router.get("/", function(req, res){
     res.render("index", {layout: 'main'})
@@ -19,6 +20,12 @@ router.get('/signup', function(req, res){
 
 router.get("/guest", function(req, res){
     res.render("search")
+})
+
+router.get("/eraone", function(req, res){
+    history.ByDate(function(data){
+        res.send(data);
+    })
 })
 
 module.exports = router;

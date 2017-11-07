@@ -12,7 +12,6 @@ if (process.env.JAWSDB_URL) {
         user: "root",
         password: "root",
         database: "History"
-        // localpw
     });
 }
 
@@ -25,9 +24,6 @@ connection.connect(function (err) {
     console.log("connected as id " + connection.threadId);
 });
 
-connection.on('error', function (err) {
-    console.log(err.code); // 'ER_BAD_DB_ERROR'
-});
 
 // Export connection for our ORM to use.
 module.exports = connection;
