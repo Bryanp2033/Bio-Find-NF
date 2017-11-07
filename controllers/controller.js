@@ -77,5 +77,51 @@ router.get("/eraten", function(req, res){
         res.send(data);
     })
 })
+router.get("/eraeleven", function(req, res){
+    history.ByDateEleven(function(data){
+        res.send(data);
+    })
+})
 
+router.get("/eratwelve", function(req, res){
+    history.ByDateTwelve(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/erathirdteen", function(req, res){
+    history.ByDateThirdteen(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/erafourteen", function(req, res){
+    history.ByDateFourteen(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/erafiveteen", function(req, res){
+    history.ByDateFiveteen(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/erasixteen", function(req, res){
+    history.ByDateSixteen(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/eraseventeen", function(req, res){
+    history.ByDateSeventeen(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/eraeightteen", function(req, res){
+    history.ByDateEightteen(function(data){
+        res.send(data);
+    })
+})
 module.exports = router;

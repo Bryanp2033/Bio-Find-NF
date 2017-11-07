@@ -51,6 +51,46 @@ var history = {
             cb(res);
         });
     },
+    ByDateEleven: function(cb){
+        orm.ByDateEleven(function(res){
+            cb(res);
+        });
+    },
+    ByDateTwelve: function(cb){
+        orm.ByDateTwelve(function(res){
+            cb(res);
+        });
+    },
+    ByDateThirdteen: function(cb){
+        orm.ByDateThirdteen(function(res){
+            cb(res);
+        });
+    },
+    ByDateFourteen: function(cb){
+        orm.ByDateFourteen(function(res){
+            cb(res);
+        });
+    },
+    ByDateFiveteen: function(cb){
+        orm.ByDateFiveteen(function(res){
+            cb(res);
+        });
+    },
+    ByDateSixteen: function(cb){
+        orm.ByDateSixteen(function(res){
+            cb(res);
+        });
+    },
+    ByDateSeventeen: function(cb){
+        orm.ByDateSeventeen(function(res){
+            cb(res);
+        });
+    },
+    ByDateEightteen: function(cb){
+        orm.ByDateEightteen(function(res){
+            cb(res);
+        });
+    },
 }
 
 module.exports = history;

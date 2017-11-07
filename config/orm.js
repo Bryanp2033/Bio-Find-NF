@@ -178,6 +178,78 @@ var orm ={
             cb(result);
         });
     },
+    ByDateEleven: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN 700 AND 800);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateTwelve: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN 600 AND 700);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateThirdteen: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN 500 AND 600);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateFourteen: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN 400 AND 500);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateFiveteen: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN 300 AND 400);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateSixteen: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN 200 AND 300);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateSeventeen: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN 100 AND 200);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateEightteen: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN 0 AND 100);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
 }
 // Object for all our SQL statement functions. 
 
