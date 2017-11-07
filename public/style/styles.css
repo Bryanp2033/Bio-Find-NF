@@ -2,3 +2,25 @@
     height: 650px;
 }
 
+#history-background{
+    background-image: url("http://historyinyourownbackyard.com/wp-content/uploads/old-paper-bg.jpg");
+    background-size: 100%;
+    background-repeat: "no-repeat"; 
+    height: auto;
+    margin: 0px;
+}
+
+.btn-primary{
+    width: 75%;
+    margin-left: 150px;
+}
+
+.footer{
+    padding: 15px;
+    color:white;
+    background-color: grey;
+}
+
+.card-body{
+    margin-bottom: 20px;
+}

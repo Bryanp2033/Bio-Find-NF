@@ -18,8 +18,7 @@ router.get('/signup', function(req, res){
 })
 
 router.get("/guest", function(req, res){
-    console.log("hello")
+    res.render("search")
 })
-
 
 module.exports = router;
