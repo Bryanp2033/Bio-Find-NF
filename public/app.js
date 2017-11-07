@@ -102,3 +102,108 @@ $(document).one("click", "#button-five", function(event){
         }
     });
 })
+
+$(document).one("click", "#button-six", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/erasix",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-six").append(div);
+        }
+    });
+})
+
+$(document).one("click", "#button-seven", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eraseven",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-seven").append(div);
+        }
+    });
+})
+
+$(document).one("click", "#button-eight", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eraeight",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-eight").append(div);
+        }
+    });
+})
+
+$(document).one("click", "#button-nine", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eranine",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-nine").append(div);
+        }
+    });
+})
+
+$(document).one("click", "#button-ten", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eraten",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-ten").append(div);
+        }
+    });
+})

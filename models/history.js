@@ -26,6 +26,31 @@ var history = {
             cb(res);
         });
     },
+    ByDateSix: function(cb){
+        orm.ByDateSix(function(res){
+            cb(res);
+        });
+    },
+    ByDateSeven: function(cb){
+        orm.ByDateSeven(function(res){
+            cb(res);
+        });
+    },
+    ByDateEight: function(cb){
+        orm.ByDateEight(function(res){
+            cb(res);
+        });
+    },
+    ByDateNine: function(cb){
+        orm.ByDateNine(function(res){
+            cb(res);
+        });
+    },
+    ByDateTen: function(cb){
+        orm.ByDateTen(function(res){
+            cb(res);
+        });
+    },
 }
 
 module.exports = history;

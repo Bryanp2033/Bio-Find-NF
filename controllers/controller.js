@@ -52,5 +52,30 @@ router.get("/erafive", function(req, res){
         res.send(data);
     })
 })
+router.get("/erasix", function(req, res){
+    history.ByDateSix(function(data){
+        res.send(data);
+    })
+})
+router.get("/eraseven", function(req, res){
+    history.ByDateSeven(function(data){
+        res.send(data);
+    })
+})
+router.get("/eraeight", function(req, res){
+    history.ByDateEight(function(data){
+        res.send(data);
+    })
+})
+router.get("/eranine", function(req, res){
+    history.ByDateNine(function(data){
+        res.send(data);
+    })
+})
+router.get("/eraten", function(req, res){
+    history.ByDateTen(function(data){
+        res.send(data);
+    })
+})
 
 module.exports = router;
