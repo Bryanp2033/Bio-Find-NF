@@ -91,6 +91,66 @@ var history = {
             cb(res);
         });
     },
+    ByDateNineteen: function(cb){
+        orm.ByDateNineteen(function(res){
+            cb(res);
+        });
+    },
+    ByDateTwenty: function(cb){
+        orm.ByDateTwenty(function(res){
+            cb(res);
+        });
+    },
+    ByDateTwentyOne: function(cb){
+        orm.ByDateTwentyOne(function(res){
+            cb(res);
+        });
+    },
+    ByDateTwentyTwo: function(cb){
+        orm.ByDateTwentyTwo(function(res){
+            cb(res);
+        });
+    },
+    ByDateTwentyThree: function(cb){
+        orm.ByDateTwentyThree(function(res){
+            cb(res);
+        });
+    },
+    ByDateTwentyFour: function(cb){
+        orm.ByDateTwentyFour(function(res){
+            cb(res);
+        });
+    },
+    ByDateTwentyFive: function(cb){
+        orm.ByDateTwentyFive(function(res){
+            cb(res);
+        });
+    },
+    ByDateTwentySix: function(cb){
+        orm.ByDateTwentySix(function(res){
+            cb(res);
+        });
+    },
+    ByDateTwentySeven: function(cb){
+        orm.ByDateTwentySeven(function(res){
+            cb(res);
+        });
+    },
+    ByDateTwentyEight: function(cb){
+        orm.ByDateTwentyEight(function(res){
+            cb(res);
+        });
+    },
+    ByDateTwentyNine: function(cb){
+        orm.ByDateTwentyNine(function(res){
+            cb(res);
+        });
+    },
+    ByDateThirty: function(cb){
+        orm.ByDateThirty(function(res){
+            cb(res);
+        });
+    },
 }
 
 module.exports = history;

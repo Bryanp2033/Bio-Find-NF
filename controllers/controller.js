@@ -124,4 +124,73 @@ router.get("/eraeightteen", function(req, res){
         res.send(data);
     })
 })
+
+router.get("/eranineteen", function(req, res){
+    history.ByDateNineteen(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/eratwenty", function(req, res){
+    history.ByDateTwenty(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/eratwentyone", function(req, res){
+    history.ByDateTwentyOne(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/eratwentytwo", function(req, res){
+    history.ByDateTwentyTwo(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/eratwentythree", function(req, res){
+    history.ByDateTwentyThree(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/eratwentyfour", function(req, res){
+    history.ByDateTwentyFour(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/eratwentyfive", function(req, res){
+    history.ByDateTwentyFive(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/eratwentysix", function(req, res){
+    history.ByDateTwentySix(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/eratwentyseven", function(req, res){
+    history.ByDateTwentySeven(function(data){
+        res.send(data);
+    })
+})
+router.get("/eratwentyeight", function(req, res){
+    history.ByDateTwentyEight(function(data){
+        res.send(data);
+    })
+})
+router.get("/eratwentynine", function(req, res){
+    history.ByDateTwentyNine(function(data){
+        res.send(data);
+    })
+})
+router.get("/erathirty", function(req, res){
+    history.ByDateThirty(function(data){
+        res.send(data);
+    })
+})
 module.exports = router;

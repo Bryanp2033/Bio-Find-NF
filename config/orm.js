@@ -250,6 +250,114 @@ var orm ={
             cb(result);
         });
     },
+    ByDateNineteen: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN -100 AND 0);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateTwenty: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN -200 AND -100);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateTwentyOne: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN -300 AND -200);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateTwentyTwo: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN -400 AND -300);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateTwentyThree: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN -500 AND -400);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateTwentyFour: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN -600 AND -500);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateTwentyFive: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN -700 AND -600);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateTwentySix: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN -800 AND -700);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateTwentySeven: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN -900 AND -800);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateTwentyEight: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN -1000 AND -900);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateTwentyNine: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN -1100 AND -1000);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
+    ByDateThirty: function (cb){
+        var queryString = "SELECT * FROM historyNames WHERE (birth_year BETWEEN -1200 AND -1100);";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
 }
 // Object for all our SQL statement functions. 
 

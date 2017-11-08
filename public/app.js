@@ -376,5 +376,259 @@ $(document).one("click", "#button-eighteen", function(event){
     });
 })
 
+$(document).one("click", "#button-nineteen", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eranineteen",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-nineteen").append(div);
+        }
+    });
+})
+
+$(document).one("click", "#button-twenty", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eratwenty",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-twenty").append(div);
+        }
+    });
+})
+
+$(document).one("click", "#button-twentyone", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eratwentyone",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-twentyone").append(div);
+        }
+    });
+})
+
+$(document).one("click", "#button-twentytwo", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eratwentytwo",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-twentytwo").append(div);
+        }
+    });
+})
+
+$(document).one("click", "#button-twentythree", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eratwentythree",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-twentythree").append(div);
+        }
+    });
+})
+
+$(document).one("click", "#button-twentyfour", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eratwentyfour",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-twentyfour").append(div);
+        }
+    });
+})
+
+$(document).one("click", "#button-twentyfive", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eratwentyfive",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-twentyfive").append(div);
+        }
+    });
+})
+
+$(document).one("click", "#button-twentysix", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eratwentysix",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-twentysix").append(div);
+        }
+    });
+})
+
+$(document).one("click", "#button-twentyseven", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eratwentyseven",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-twentyseven").append(div);
+        }
+    });
+})
+
+$(document).one("click", "#button-twentyeight", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eratwentyeight",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-twentyeight").append(div);
+        }
+    });
+})
+
+
+$(document).one("click", "#button-twentynine", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/eratwentynine",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-twentynine").append(div);
+        }
+    });
+})
+
+$(document).one("click", "#button-thirty", function(event){
+    event.preventDefault();
+    
+    $.ajax({
+        method: "GET",
+        url: "/erathirty",
+    }).done(function(data) {
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-thirty").append(div);
+        }
+    });
+})
+
+
 
 
