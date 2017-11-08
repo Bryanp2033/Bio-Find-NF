@@ -151,6 +151,11 @@ var history = {
             cb(res);
         });
     },
+    ByID: function(vals, cb){
+        orm.ByID(vals, function(res){
+            cb(res);
+        })
+    }
 }
 
 module.exports = history;

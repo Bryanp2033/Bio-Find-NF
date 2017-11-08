@@ -22,9 +22,22 @@ router.get("/guest", function(req, res){
     res.render("search")
 })
 
-router.get("/guest/:name", function(req, res){
-    console.log(req.params.name)
+router.get("/guest/:id", function(req, res){
+    console.log(req.params.id)
+    var id = req.params.id
+
+    history.ByID(id, function(data){
+        console.log(data);
+
+        var hbsObject = {
+            names: data
+        }
+
+        res.render("person", hbsObject)
+    })
+    // TODO make an orm to search for all the info of the name of the person and make it into a handlebars Object.
 })
+
 
 router.get("/eraone", function(req, res){
     history.ByDateOne(function(data){

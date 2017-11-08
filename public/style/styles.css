@@ -24,3 +24,18 @@
 .card-body{
     margin-bottom: 20px;
 }
+
+.person-page{
+    background-color: grey;
+    border-radius: 10px;
+    margin-right: px;
+}
+
+.history-image{
+    padding: 20px;
+}
+
+.summary-block{
+    margin-left: 20px;
+    padding-bottom: 20px; 
+}

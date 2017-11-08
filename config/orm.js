@@ -358,6 +358,15 @@ var orm ={
             cb(result);
         });
     },
+    ByID: function(val,cb){
+        var queryString = "SELECT * FROM historyNames WHERE article_id= " + val + ";";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, val, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
 }
 // Object for all our SQL statement functions. 
 

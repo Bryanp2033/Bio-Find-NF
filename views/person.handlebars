@@ -1,0 +1,84 @@
+<nav class="navbar navbar-light bg-faded">
+  <a class="navbar-brand" href="/guest">Bio-Find</a>
+</nav>
+
+
+<div class="jumbotron" id="history-background">
+        <div class="container history-container">
+            {{#each names}}
+            <h2><span id="name">{{full_name}}</span><span> ({{birth_year}})- </span><span>{{occupation}}</span></h2>
+            <span>City: {{city}}, {{country}}</span>
+        </div>
+        <div class="container person-page">
+            <div class='image'>
+                <img src="http://drpattydental.com/wp-content/uploads/2017/05/placeholder.png" alt="{{full_name}}" height="420" width="520" class="history-image">
+            </div>
+            <div class="summary-block">
+                <h2>{{full_name}}'s Summary</h2>
+
+                <div class="summary">
+                    <p>Lorem Lips asdhajshdaj sgdhas gdhjasg das</p>
+                </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <button class="btn btn-primary history-btn" href="/videos" id="button-video" type="button" data-toggle="collapse" data-target="#collapseVideo" aria-expanded="false" aria-controls="collapseExample">
+                        Videos/Documentaries of {{full_name}}
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseVideo">
+                        <div class="card card-body">
+                            <hr>
+                            <div id="videos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+
+        {{/each}}
+</div>
+
+<script>
+    var value = $("#name").text();
+    console.log(value)
+    
+    $(document).one("click", "#button-video", function(event){
+        event.preventDefault();
+
+            var youtubeApiKey = "AIzaSyAgk2t-v33L1UZlEksXMD96frXKLKhNIUQ"
+            var youtubeUrl = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=documentary+" + value + " history" +  "&key=" + youtubeApiKey
+            console.log(youtubeUrl)
+            $.ajax({
+               url: youtubeUrl,
+               method: 'GET',
+            }).done(function(response){
+
+                // the css for the videos div
+                $("#videos").css({
+                    "display": "grid",
+                    "grid-template-columns": "1fr 1fr",
+                    "grid-template-rows": "auto",
+                    "grid-gap": "5px",
+                })
+
+            // the for loops that creates the iframe of the youtube videos of the selected hero
+               for(i=0; i < response.items.length; i++){
+                   console.log(response.items[i].id.videoId)
+                   var video = $("<iframe>")
+                   video.attr("class","video")
+                   video.attr("height", "255")
+                   video.attr("width", "450")
+                   video.attr("src","https://www.youtube.com/embed/" + response.items[i].id.videoId)
+                   video.attr("frameborder", "0")
+                   $("#videos").append(video)
+                   console.log(video)
+               }
+           })
+    })
+</script>
