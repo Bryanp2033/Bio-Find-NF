@@ -11,13 +11,13 @@
         </div>
         <div class="container person-page">
             <div class='image'>
-                <img src="http://drpattydental.com/wp-content/uploads/2017/05/placeholder.png" alt="{{full_name}}" height="420" width="520" class="history-image">
+                <img src="" alt="{{full_name}}" height="420" width="520" class="history-image">
             </div>
             <div class="summary-block">
                 <h2>{{full_name}}'s Summary</h2>
 
-                <div class="summary">
-                    <p>Lorem Lips asdhajshdaj sgdhas gdhjasg das</p>
+                <div class="single-summary-block">
+                    <p id="summary"></p>
                 </div>
 
             <div class="row">
@@ -80,8 +80,24 @@
 </div>
 
 <script>
+
     var value = $("#name").text();
     console.log(value)
+
+
+    //$(document).ready(function(){
+        //var url = "https://en.wikipedia.org/api/rest_v1/page/summary/" + value + "?redirect=true";
+
+        //$.ajax({
+            //url: url,
+            //method: "GET"
+        //}).done(function(response){
+            //console.log(response);
+            //$("#summary").text(response.extract);
+            //$(".history-image").attr("src", response.thumbnail.source)
+        //})
+    //})
+
     
     $(document).one("click", "#button-video", function(event){
         event.preventDefault();
