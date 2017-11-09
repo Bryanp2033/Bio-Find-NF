@@ -5,9 +5,15 @@
 
 <div class="jumbotron" id="history-background">
         <div class="container history-container">
+            
             {{#each names}}
             <h2><span id="name">{{full_name}}</span><span> ({{birth_year}})- </span><span>{{occupation}}</span></h2>
             <span>City: {{city}}, {{country}}</span>
+
+            <form action="/search" method="POST">
+            <input type="text" name="name" placeholder="Enter a history name here" class="form-control">
+            <button type="submit" class="btn btn-info">Submit</button>
+            </form>
         </div>
         <div class="container person-page">
             <div class='image'>
@@ -137,7 +143,7 @@
     $(document).one("click", "#button-books", function(event){
         event.preventDefault();
 
-        var url = "https://www.googleapis.com/books/v1/volumes?q=" + value + " bio";
+        var url = "https://www.googleapis.com/books/v1/volumes?q=" + value + " history bio";
 
         $.ajax({
             url: url,

@@ -10,7 +10,8 @@ $(document).one("click", "#button-one", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            //a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -31,7 +32,7 @@ $(document).one("click", "#button-two", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -52,7 +53,7 @@ $(document).one("click", "#button-three", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -73,7 +74,7 @@ $(document).one("click", "#button-four", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -94,7 +95,7 @@ $(document).one("click", "#button-five", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -115,7 +116,7 @@ $(document).one("click", "#button-six", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -136,7 +137,7 @@ $(document).one("click", "#button-seven", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -157,7 +158,7 @@ $(document).one("click", "#button-eight", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -178,7 +179,7 @@ $(document).one("click", "#button-nine", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -199,7 +200,7 @@ $(document).one("click", "#button-ten", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -220,7 +221,7 @@ $(document).one("click", "#button-eleven", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -241,7 +242,7 @@ $(document).one("click", "#button-twelve", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -262,7 +263,7 @@ $(document).one("click", "#button-thirdteen", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -283,7 +284,7 @@ $(document).one("click", "#button-fourteen", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -304,7 +305,7 @@ $(document).one("click", "#button-fiveteen", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -325,7 +326,7 @@ $(document).one("click", "#button-sixteen", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -346,7 +347,7 @@ $(document).one("click", "#button-seventeen", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -367,7 +368,7 @@ $(document).one("click", "#button-eighteen", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -388,7 +389,7 @@ $(document).one("click", "#button-nineteen", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -409,7 +410,7 @@ $(document).one("click", "#button-twenty", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -430,7 +431,7 @@ $(document).one("click", "#button-twentyone", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -451,7 +452,7 @@ $(document).one("click", "#button-twentytwo", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -472,7 +473,7 @@ $(document).one("click", "#button-twentythree", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -493,7 +494,7 @@ $(document).one("click", "#button-twentyfour", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -514,7 +515,7 @@ $(document).one("click", "#button-twentyfive", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -535,7 +536,7 @@ $(document).one("click", "#button-twentysix", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -556,7 +557,7 @@ $(document).one("click", "#button-twentyseven", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -577,7 +578,7 @@ $(document).one("click", "#button-twentyeight", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -599,7 +600,7 @@ $(document).one("click", "#button-twentynine", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
@@ -620,7 +621,7 @@ $(document).one("click", "#button-thirty", function(event){
             var div = $("<div id='history-template'>");
             var p = $("<p class='history-name'>")
             var a = $("<a>")
-            a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
             a.html(data[i].full_name);
             $(p).append(a);
             $(div).append(p);
