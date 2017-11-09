@@ -155,6 +155,11 @@ var history = {
         orm.ByID(vals, function(res){
             cb(res);
         })
+    },
+    ByName: function(vals, cb){
+        orm.ByName(vals, function(res){
+            cb(res);
+        })
     }
 }
 

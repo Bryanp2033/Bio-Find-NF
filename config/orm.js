@@ -367,6 +367,15 @@ var orm ={
             cb(result);
         });
     },
+    ByName: function(val,cb){
+        var queryString = 'SELECT * FROM historyNames WHERE full_name= ' + '"' + val + '"' + ";";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, val, function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
 }
 // Object for all our SQL statement functions. 
 

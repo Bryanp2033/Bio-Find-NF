@@ -23,11 +23,11 @@ router.get("/guest", function(req, res){
     res.render("search")
 })
 
-router.get("/guest/:id", function(req, res){
-    console.log(req.params.id)
-    var id = req.params.id
+router.get("/guest/:full_name", function(req, res){
+    console.log(req.params.full_name)
+    var name = req.params.full_name
 
-    history.ByID(id, function(data){
+    history.ByName(name, function(data){
         console.log(data);
 
         var hbsObject = {
@@ -40,7 +40,10 @@ router.get("/guest/:id", function(req, res){
 })
 
 router.post("/search", function(req, res){
-    console.log(req)
+    console.log(req.body.name);
+    var name = req.body.name
+
+    res.redirect("/guest/" + name);
 })
 
 
