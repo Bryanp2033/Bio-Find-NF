@@ -13,8 +13,10 @@ app.engine("handlebars", exphbrs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 var routes = require("./controllers/controller.js");
+var historyRoutes = require("./controllers/history-list.js");
 
 app.use("/", routes);
+app.use("/", historyRoutes);
 
 app.listen(PORT, function () {
     console.log("Listening on Port: " + PORT)
