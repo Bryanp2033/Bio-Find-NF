@@ -37,6 +37,41 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <button class="btn btn-primary history-btn" href="/books" id="button-books" type="button" data-toggle="collapse" data-target="#collapseBooks" aria-expanded="false" aria-controls="collapseExample">
+                        Books on {{full_name}}
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseBooks">
+                        <div class="card card-body">
+                            <hr>
+                            <div id="books">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <button class="btn btn-primary history-btn" href="/references" id="button-reference" type="button" data-toggle="collapse" data-target="#collapseReference" aria-expanded="false" aria-controls="collapseExample">
+                        Additional References on {{full_name}}
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseReference">
+                        <div class="card card-body">
+                            <hr>
+                            <div id="reference">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             </div>
         </div>
 
@@ -81,4 +116,69 @@
                }
            })
     })
+
+
+    $(document).one("click", "#button-books", function(event){
+        event.preventDefault();
+
+        var url = "https://www.googleapis.com/books/v1/volumes?q=" + value + " bio";
+
+        $.ajax({
+            url: url,
+            method: "GET"
+        }).done(function(response){
+            
+            var response = response.items
+
+            $("#books").css({
+            "display": "grid",
+            "grid-template-columns": "1fr 1fr",
+            "grid-template-rows": "auto",
+            "grid-gap": "5px",
+            })
+
+            for(var i = 0; i < 4; i++){
+                console.log(response[i].volumeInfo.title)
+                var div = $("<div class='single-book'>");
+                var img = $("<img class='single-book-img'>")
+                img.attr("src", response[i].volumeInfo.imageLinks.thumbnail);
+                var span = $("<br><span class='single-book-title'>");
+                span.text(response[i].volumeInfo.title);
+                var a1 = $("<br><a class='single-book-link'>");
+                        a1.attr("href", response[i].volumeInfo.previewLink );
+                        a1.attr("target", "_blank");
+                        a1.text("Preview this book")
+                var a2 = $("<br><a class='sing-book-amazon'>");
+                    a2.attr("href", "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=" + response[i].volumeInfo.title + "+by+" + response[i].volumeInfo.authors[0] )
+                    a2.attr("target", "_blank");
+                    a2.text("Buy this book on Amazon")
+                $(div).append(img,span, a1, a2);
+                $("#books").append(div)
+            }
+
+        })
+    })
+
+
+    $(document).one("click", "#button-reference", function(event){
+        event.preventDefault();
+
+        var div = $("<div class='references'>");
+        var a = $("<br><a id='reference-one'>")
+            a.attr("href", "https://www.britannica.com/search?query=" + value);
+            a.attr("target", "_blank");
+            a.text("https://www.britannica.com/biography/" + value);
+        var a2 = $("<br><a id='reference-two'>")
+            a2.attr("href", "http://www.history.com/search?q=" + value);
+            a2.attr("target", "_blank");
+            a2.text("http://www.history.com/topics/ancient-history/" + value);
+        var a3 = $("<br><a id='reference-three'>")
+            a3.attr("href", "http://www.livius.org/search/?q=" + value);
+            a3.attr("target", "_blank");
+            a3.text("http://www.livius.org/articles/person/" + value);
+        $(div).append(a,a2,a3);
+        $("#reference").append(div)
+    })
+
+    
 </script>
