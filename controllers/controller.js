@@ -10,19 +10,22 @@ router.get("/", function(req, res){
     console.log("Working Login")
 })
 
-
+// TODO: get this route working/ future update
 router.get("/login", function(req, res){
     console.log(req)
 })
 
+// TODO: get this route working/ future update
 router.get('/signup', function(req, res){
     console.log(res);
 })
 
+// guest login
 router.get("/guest", function(req, res){
     res.render("search")
 })
 
+// redirect to guest/:full_name
 router.get("/guest/:full_name", function(req, res){
     console.log(req.params.full_name)
     var name = req.params.full_name
@@ -39,6 +42,7 @@ router.get("/guest/:full_name", function(req, res){
     
 })
 
+// search route
 router.post("/search", function(req, res){
     console.log(req.body.name);
     var name = req.body.name
@@ -46,6 +50,5 @@ router.post("/search", function(req, res){
     res.redirect("/guest/" + name);
 })
 
-
-
+// Export the controller for the model.
 module.exports = router;
