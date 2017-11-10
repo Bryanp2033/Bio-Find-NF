@@ -14,19 +14,25 @@
 
         </div>
         <div class="container person-page">
-            <div class='image'>
-                <img src="http://drpattydental.com/wp-content/uploads/2017/05/placeholder.png" alt="{{full_name}}" height="420" width="520" class="history-image">
-            </div>
-            <div class="summary-block">
-                <h2 id="summary-header">{{full_name}}'s Summary</h2>
+            <div class="row">
+                <div class="col">
+                    <div class='image'>
+                        <img src="http://drpattydental.com/wp-content/uploads/2017/05/placeholder.png" alt="{{full_name}}" height="420" width="520" class="history-image">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="summary-block">
+                        <h2 id="summary-header">{{full_name}}'s Summary</h2>
 
-                <p id="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                        <p id="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                    </div>
+                </div>
            </div>
 
             <div class="row">
                 <div class="col-12">
                     <p>
-                        <button class="btn btn-primary history-btn" href="/videos" id="button-video" type="button" data-toggle="collapse" data-target="#collapseVideo" aria-expanded="false" aria-controls="collapseExample">
+                        <button class="btn btn-leto history-btn" href="/videos" id="button-video" type="button" data-toggle="collapse" data-target="#collapseVideo" aria-expanded="false" aria-controls="collapseExample">
                         Videos/Documentaries of {{full_name}}
                         </button>
                     </p>
@@ -43,7 +49,7 @@
             <div class="row">
                 <div class="col-12">
                     <p>
-                        <button class="btn btn-primary history-btn" href="/books" id="button-books" type="button" data-toggle="collapse" data-target="#collapseBooks" aria-expanded="false" aria-controls="collapseExample">
+                        <button class="btn btn-leto history-btn" href="/books" id="button-books" type="button" data-toggle="collapse" data-target="#collapseBooks" aria-expanded="false" aria-controls="collapseExample">
                         Books on {{full_name}}
                         </button>
                     </p>
@@ -61,7 +67,7 @@
             <div class="row">
                 <div class="col-12">
                     <p>
-                        <button class="btn btn-primary history-btn" href="/references" id="button-reference" type="button" data-toggle="collapse" data-target="#collapseReference" aria-expanded="false" aria-controls="collapseExample">
+                        <button class="btn btn-leto history-btn" href="/references" id="button-reference" type="button" data-toggle="collapse" data-target="#collapseReference" aria-expanded="false" aria-controls="collapseExample">
                         Additional References on {{full_name}}
                         </button>
                     </p>
@@ -161,13 +167,13 @@
                 var div = $("<div class='single-book'>");
                 var img = $("<img class='single-book-img'>")
                 img.attr("src", response[i].volumeInfo.imageLinks.thumbnail);
-                var span = $("<br><span class='single-book-title'>");
+                var span = $("<br><div class='single-book-title'><br>");
                 span.text(response[i].volumeInfo.title);
-                var a1 = $("<br><a class='single-book-link'>");
+                var a1 = $("<a class=' single-book-link'>");
                         a1.attr("href", response[i].volumeInfo.previewLink );
                         a1.attr("target", "_blank");
                         a1.text("Preview this book")
-                var a2 = $("<br><a class='sing-book-amazon'>");
+                var a2 = $("<br><a class='single-book-amazon'>");
                     a2.attr("href", "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=" + response[i].volumeInfo.title + "+by+" + response[i].volumeInfo.authors[0] )
                     a2.attr("target", "_blank");
                     a2.text("Buy this book on Amazon")
@@ -183,15 +189,15 @@
         event.preventDefault();
 
         var div = $("<div class='references'>");
-        var a = $("<br><a id='reference-one'>")
+        var a = $("<a id='reference-one' class='ref-links'>")
             a.attr("href", "https://www.britannica.com/search?query=" + value);
             a.attr("target", "_blank");
             a.text("https://www.britannica.com/biography/" + value);
-        var a2 = $("<br><a id='reference-two'>")
+        var a2 = $("<br><a id='reference-two' class='ref-links'>")
             a2.attr("href", "http://www.history.com/search?q=" + value);
             a2.attr("target", "_blank");
             a2.text("http://www.history.com/topics/ancient-history/" + value);
-        var a3 = $("<br><a id='reference-three'>")
+        var a3 = $("<br><a id='reference-three' class='ref-links'>")
             a3.attr("href", "http://www.livius.org/search/?q=" + value);
             a3.attr("target", "_blank");
             a3.text("http://www.livius.org/articles/person/" + value);

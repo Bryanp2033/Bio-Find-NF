@@ -184,6 +184,14 @@
     background-color: white;
 }
 
+.card-body{
+    margin-bottom: 20px;
+}
+
+
+
+
+
 
 .person-page{
     background-color: white;
@@ -213,12 +221,91 @@
     margin-bottom: 25px;
 }
 
-
-
-.card-body{
-    margin-bottom: 20px;
+.summary-block{
+   margin-top: 15px;
+   font-family: 'Spectral SC', serif;
 }
 
+#summary-header{
+    font-size: 30px;
+}
+
+#summary{
+    line-height: 28px;
+}
+
+
+.btn-leto{
+    width: 97%;
+    background-color: #f5f5dc;
+    margin-left: 18px;
+    color: black;
+    border: 1px solid black;
+    font-family: 'Spectral SC', serif;
+    font-size: 25px;
+}
+
+.btn-leto:hover{
+   background-color: white;
+   color: black;
+   border-color: black;
+}
+
+.btn-leto:active{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+
+.single-book{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.single-book-img{
+    margin-left: 180px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.single-book-title{
+    margin-left: 180px;
+    font-size: 18px;
+}
+
+.single-book-link{
+    margin-left: 180px;
+    color: black;
+    font-family: 'Spectral SC', serif;
+}
+
+.single-book-link:hover{
+    color: green;
+}
+
+.single-book-amazon{
+    margin-left: 180px;
+    color: black;
+    font-family: 'Spectral SC', serif;
+}
+
+.single-book-amazon:hover{
+    color: green;
+}
+
+
+.ref-links{
+   font-size: 20px;
+   color: black;
+}
+
+.ref-links:hover{
+    color: green;
+}
 
 
 
@@ -226,10 +313,6 @@
     padding: 20px;
 }
 
-.summary-block{
-    margin-left: 20px;
-    padding-bottom: 20px; 
-}
 
 
 
