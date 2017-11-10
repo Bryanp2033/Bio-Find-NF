@@ -1,22 +1,47 @@
 <div class="jumbotron index">
-    <h2 class="text-center">Bio-Find</h2>
-    <h3 class="text-center">#1 Leading Tool for Students</h3>
-    <h3 class="text-center">Looking to learn more on Historical Figures</h3>
 
-    <div>
+    <h1 class="text-center head-line animated" id="header-title">Bio-Find</h1>
+
+    <div class="header-text text-center">
+
+        <h3 class="text-center header-text-one animated">Leading Tool for Students</h3>
+        <h3 class="text-center header-text-two animated">Looking to learn more on Historical Figures</h3>
+
+
         <div class="form-group text-center" id="main-form">
-            <button class="btn btn-info" data-toggle="modal" data-target="#LoginModal">Login</button>
-            <button class="btn btn-info" data-toggle="modal" data-target="#SignupModal">Sign Up</button>
+            {{!-- <button class="btn btn-info" data-toggle="modal" data-target="#LoginModal">Login</button>
+            <button class="btn btn-info" data-toggle="modal" data-target="#SignupModal">Sign Up</button> --}}
             <form action="/guest" method="GET">
-            <a class="btn btn-info" href="/guest">Login as Guest</a>
+            <a class="btn btn-info guest-btn text-center animated" href="/guest">Login as Guest</a>
             </form> 
         </div>
     </div>
-    
+
 </div>
 
-<!-- Modal for Login -->
-<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+<div class="container about-section animated">
+   <h1 id="about-header">About</h1>
+   <p id="about-text">Bio-Find is one of the top leading tools for students. We meet their needs by providing a fast, efficient way to look up information on a historical figure. This eliminates the tedious and unnecessary process of navigating through the interwebs for research. This tool was created by students for students.
+   </p>
+   <img id="about-pic" src="https://media.giphy.com/media/tW9Wo01iwUvy8/source.gif">
+</div>
+<hr>
+
+<div class="container features-section animated">
+    <img id="features-pic" src="http://hyperallergic.com/wp-content/uploads/2014/09/greekvases-2-640.gif" width="500">
+    <h1 id="features-header">Features</h1>
+    <ul id="features-text">
+        <li>Summaries come from certified research websites used by schools </li><br>
+        <li>Look up videos for some visual information on historical people</li><br>
+        <li>Need more info? Check out books about your selected historical person</li><br>
+        <li>We also provide links to even more additional resources</li><br>
+    </ul>
+</div>
+
+    
+
+<!-- TODO: Modal for Login -->
+{{!-- <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header ">
@@ -42,11 +67,11 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 
 
-<!-- Modal for Sign Up -->
-<div class="modal fade" id="SignupModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+<!-- TODO: Modal for Sign Up -->
+{{!-- <div class="modal fade" id="SignupModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header ">
@@ -81,7 +106,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 
 <script>
     $(document).on("click","#signup-button", function(event){

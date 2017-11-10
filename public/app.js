@@ -1355,40 +1355,21 @@ $(document).on("click", "#default-thirty", function(event){
 })
 
 
+$(document).ready(function(data){
+    
+    $(".head-line").addClass('animated fadeInDown');
+
+    $(".header-text-one").addClass('animated fadeIn');
+    $(".header-text-two").addClass('animated fadeIn');
+
+    $('.guest-btn').addClass('animated bounceIn');
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // $('.about-section').addClass("hidden").viewportChecker({
+    //     classToAdd: 'visible animated fadeIn',
+    //     offset: 100
+    // });
+})
 
 
 
