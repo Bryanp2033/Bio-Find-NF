@@ -104,10 +104,90 @@
     margin: 0px;
 }
 
+.search-container{
+    /* margin: 40px; */
+    padding: 40px;
+    background: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+    border-bottom-right-radius: 25px; 
+    border-bottom-left-radius: 25px; 
+}
+
+
+/* input bar on search page */
+.form-inline .form-group input {
+    width:600px;
+    height: 50px
+}
+
+.first-search-bar{
+    margin-left: 150px;
+    margin-bottom: 80px;
+}
+
+.search-one-button{
+    margin-left: 15px;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    width: 175px;
+}
+
+.era-text{
+    font-family: 'Spectral SC', serif;
+    font-size: 80px;
+}
+
+
+
+
+
+
+
 .btn-primary{
     width: 75%;
     margin-left: 150px;
+    background-color: #f5f5dc;
+    color: black;
+    border: 1px solid black;
+    font-family: 'Spectral SC', serif;
+    font-size: 40px;
 }
+
+.btn-primary:hover{
+    background-color: lightgrey;
+}
+
+
+.history-name-text{
+   text-decoration: none;
+   color: black;
+   font-size: 28px;
+   font-family: 'Spectral SC', serif;
+}
+
+.history-name-text:hover{
+    color: green;
+}
+
+
+.btn-warning{
+   background-color: #00A3B6;
+   font-family: 'Spectral SC', serif;
+   color: white;
+   font-size: 15px;
+   border: none;
+}
+
+.btn-warning:hover{
+    color: black;
+    background-color: white;
+}
+
+
+
+
+
 
 .footer{
     padding: 15px;

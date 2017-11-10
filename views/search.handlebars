@@ -1,14 +1,19 @@
-<nav class="navbar navbar-light bg-faded">
+{{!-- <nav class="navbar navbar-light bg-faded">
   <a class="navbar-brand" href="#">Bio-Find</a>
-</nav>
-<div class="jumbotron" id="history-background">
-    <div class="container">
+</nav> --}}
 
-        <form action="/search" method="POST">
-            <input type="text" name="name" placeholder="Enter a history name here" class="form-control">
-            <button type="submit" class="btn btn-info">Submit</button>
+<div id="history-background">
+    <div class="container search-container">
+
+        <form action="/search" method="POST" class="form-inline first-search-bar">
+            <div class="form-group">
+            <input type="text" name="name" placeholder="Enter a history name here" class="form-control search-one-input">
+            <button type="submit" class="btn btn-info search-one-button">Submit</button>
+            </div>
         </form>
-        <h2 class="text-center">A.D. Era</h2>
+        <h2 class="text-center era-text">A.D. Era</h2>
+        <hr>
+
         <div class="row">
             <div class="col-12">
                 <p>
@@ -21,7 +26,7 @@
                         <h2 class="text-center">Names</h2>
                         
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-one" id="default-one">Default</a></li>
@@ -51,7 +56,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-two" id="default-two">Default</a></li>
@@ -78,7 +83,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-three" id="default-three">Default</a></li>
@@ -105,7 +110,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-four" id="default-four">Default</a></li>
@@ -132,7 +137,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-five" id="default-five">Default</a></li>
@@ -159,7 +164,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-six" id="default-six">Default</a></li>
@@ -186,7 +191,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-seven" id="default-seven">Default</a></li>
@@ -213,7 +218,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warningdropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-eight" id="default-eight">Default</a></li>
@@ -240,7 +245,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-nine" id="default-nine">Default</a></li>
@@ -267,7 +272,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-ten" id="default-ten">Default</a></li>
@@ -294,7 +299,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-eleven" id="default-eleven">Default</a></li>
@@ -321,7 +326,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-twelve" id="default-twelve">Default</a></li>
@@ -348,7 +353,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-thirdteen" id="default-thirdteen">Default</a></li>
@@ -375,7 +380,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-fourteen" id="default-fourteen">Default</a></li>
@@ -402,7 +407,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-fiveteen" id="default-fiveteen">Default</a></li>
@@ -429,7 +434,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-sixteen" id="default-sixteen">Default</a></li>
@@ -456,7 +461,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-seventeen" id="default-seventeen">Default</a></li>
@@ -483,7 +488,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-eighteen" id="default-eighteen">Default</a></li>
@@ -497,7 +502,8 @@
                 </div>
             </div>
         </div>
-        <h2 class="text-center">B.C. Era</h2>
+        <h2 class="text-center era-text">B.C. Era</h2>
+        <hr>
 
         <div class="row">
             <div class="col-12">
@@ -511,7 +517,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-nineteen" id="default-nineteen">Default</a></li>
@@ -538,7 +544,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-twenty" id="default-twenty">Default</a></li>
@@ -565,7 +571,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-twentyone" id="default-twentyone">Default</a></li>
@@ -592,7 +598,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-twentytwo" id="default-twentytwo">Default</a></li>
@@ -619,7 +625,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-twentythree" id="default-twentythree">Default</a></li>
@@ -646,7 +652,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-twentyfour" id="default-twentyfour">Default</a></li>
@@ -673,7 +679,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-twentyfive" id="default-twentyfive">Default</a></li>
@@ -700,7 +706,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-twentysix" id="default-twentysix">Default</a></li>
@@ -727,7 +733,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-twentyseven" id="default-twentyseven">Default</a></li>
@@ -754,7 +760,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-twentyeight" id="default-twentyeight">Default</a></li>
@@ -781,7 +787,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-twentynine" id="default-twentynine">Default</a></li>
@@ -808,7 +814,7 @@
                         <h2 class="text-center">Names</h2>
 
                         <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Order By:
+                            <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Order By:
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="default-thirty" id="default-thirty">Default</a></li>
