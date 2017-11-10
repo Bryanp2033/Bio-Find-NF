@@ -36,7 +36,7 @@ router.get("/guest/:full_name", function(req, res){
 
         res.render("person", hbsObject)
     })
-    // TODO make an orm to search for all the info of the name of the person and make it into a handlebars Object.
+    
 })
 
 router.post("/search", function(req, res){
@@ -45,6 +45,7 @@ router.post("/search", function(req, res){
 
     res.redirect("/guest/" + name);
 })
+
 
 
 module.exports = router;

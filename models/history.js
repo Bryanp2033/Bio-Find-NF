@@ -160,6 +160,11 @@ var history = {
         orm.ByName(vals, function(res){
             cb(res);
         })
+    },
+    ByAlphabetical: function(dateone, datetwo, cb){
+        orm.ByAlphabetical(dateone, datetwo, function(res){
+            cb(res);
+        })
     }
 }
 

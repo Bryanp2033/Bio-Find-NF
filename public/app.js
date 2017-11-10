@@ -631,7 +631,57 @@ $(document).one("click", "#button-thirty", function(event){
 });
 
 
-$(document).one
+$(document).on("click", "#default-one", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/default-one"
+    }).done(function(data){
+        $("#time-era-one").empty();
+
+        for(var i = 0; i < data.length; i++){
+            console.log(data[i].full_name)
+            var div = $("<div id='history-template'>");
+            var p = $("<p class='history-name'>")
+            var a = $("<a>")
+            //a.attr("href", "/guest/" + data[i].article_id);
+            a.attr("href", "/guest/" + data[i].full_name);
+            a.html(data[i].full_name);
+            $(p).append(a);
+            $(div).append(p);
+            $("#time-era-one").append(div);
+        }
+    })
+})
+
+
+
+$(document).on("click", "#alphabetical-one", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-one",
+    }).done(function(data){
+       $("#time-era-one").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-one").append(div);
+        }
+
+    })
+})
 
 
 

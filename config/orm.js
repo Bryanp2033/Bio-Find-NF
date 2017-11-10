@@ -376,6 +376,15 @@ var orm ={
             cb(result);
         });
     },
+    ByAlphabetical: function(dateone, datetwo ,cb){
+        var queryString = "SELECT * FROM historyNames WHERE(birth_year BETWEEN " + dateone + " AND " +  datetwo + ") ORDER BY full_name ASC";
+        console.log("ORM Searching for: " + queryString);
+
+        connection.query(queryString, [dateone,datetwo], function(err, result){
+            if(err) throw err;
+            cb(result);
+        });
+    },
 }
 // Object for all our SQL statement functions. 
 

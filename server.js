@@ -14,9 +14,11 @@ app.set("view engine", "handlebars");
 
 var routes = require("./controllers/controller.js");
 var historyRoutes = require("./controllers/history-list.js");
+var historyFilters = require("./controllers/history-filter.js")
 
 app.use("/", routes);
 app.use("/", historyRoutes);
+app.use("/", historyFilters)
 
 app.listen(PORT, function () {
     console.log("Listening on Port: " + PORT)
