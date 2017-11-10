@@ -1,30 +1,27 @@
-<nav class="navbar navbar-light bg-faded">
-  <a class="navbar-brand" href="/guest">Bio-Find</a>
-</nav>
-
-
 <div class="jumbotron" id="history-background">
         <div class="container history-container">
             
-            {{#each names}}
-            <h2><span id="name">{{full_name}}</span><span> ({{birth_year}})- </span><span>{{occupation}}</span></h2>
-            <span>City: {{city}}, {{country}}</span>
+        <form action="/search" method="POST" class="form-inline second-search-bar">
+            <div class="form-group">
+            <input type="text" name="name" placeholder="Enter a history name here" class="form-control search-one-input">
+            <button type="submit" class="btn btn-info search-one-button">Submit</button>
+            </div>
+        </form>
 
-            <form action="/search" method="POST">
-            <input type="text" name="name" placeholder="Enter a history name here" class="form-control">
-            <button type="submit" class="btn btn-info">Submit</button>
-            </form>
+            {{#each names}}
+            <h2><span id="person-name">{{full_name}}</span><span id="birth-year"> ({{birth_year}})- </span><span id="occupation">{{occupation}}</span></h2>
+            <span id="city-details">City: {{city}}, {{country}}</span>
+
         </div>
         <div class="container person-page">
             <div class='image'>
-                <img src="" alt="{{full_name}}" height="420" width="520" class="history-image">
+                <img src="http://drpattydental.com/wp-content/uploads/2017/05/placeholder.png" alt="{{full_name}}" height="420" width="520" class="history-image">
             </div>
             <div class="summary-block">
-                <h2>{{full_name}}'s Summary</h2>
+                <h2 id="summary-header">{{full_name}}'s Summary</h2>
 
-                <div class="single-summary-block">
-                    <p id="summary"></p>
-                </div>
+                <p id="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+           </div>
 
             <div class="row">
                 <div class="col-12">
@@ -87,7 +84,7 @@
 
 <script>
 
-    var value = $("#name").text();
+    var value = $("#person-name").text();
     console.log(value)
 
 

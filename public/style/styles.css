@@ -185,25 +185,42 @@
 }
 
 
-
-
-
-
-.footer{
-    padding: 15px;
-    color:white;
-    background-color: grey;
+.person-page{
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
 }
+
+#person-name{
+    font-family: 'Spectral SC', serif;
+    font-size: 35px;
+}
+
+#birth-year{
+    font-family: 'Spectral SC', serif;
+}
+
+#occupation{
+    font-family: 'Spectral SC', serif;
+}
+
+#city-details{
+    font-family: 'Spectral SC', serif;
+    font-size: 20px;
+}
+
+.second-search-bar{
+    margin-bottom: 25px;
+}
+
+
 
 .card-body{
     margin-bottom: 20px;
 }
 
-.person-page{
-    background-color: grey;
-    border-radius: 10px;
-    margin-right: px;
-}
+
+
 
 .history-image{
     padding: 20px;
@@ -212,4 +229,15 @@
 .summary-block{
     margin-left: 20px;
     padding-bottom: 20px; 
+}
+
+
+
+
+
+
+.footer{
+    padding: 15px;
+    color:white;
+    background-color: grey;
 }
