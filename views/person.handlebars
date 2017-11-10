@@ -94,20 +94,20 @@
     console.log(value)
 
 
-    //$(document).ready(function(){
-        //var url = "https://en.wikipedia.org/api/rest_v1/page/summary/" + value + "?redirect=true";
+    $(document).ready(function(){
+        var url = "https://en.wikipedia.org/api/rest_v1/page/summary/" + value + "?redirect=true";
 
-        //$.ajax({
-            //url: url,
-            //method: "GET"
-        //}).done(function(response){
-            //console.log(response);
+        $.ajax({
+            url: url,
+            method: "GET"
+        }).done(function(response){
+            console.log(response);
       
-            //$("#summary").text(response.extract);
+            $("#summary").text(response.extract);
             
-            //$(".history-image").attr("src", response.thumbnail.source)
-        //})
-    //})
+            $(".history-image").attr("src", response.thumbnail.source)
+        })
+    })
 
     
     $(document).one("click", "#button-video", function(event){
