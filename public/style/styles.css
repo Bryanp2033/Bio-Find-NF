@@ -311,11 +311,9 @@
 
 .history-image{
     padding: 20px;
+    max-width: 100%;
+    height: 500px;
 }
-
-
-
-
 
 
 
