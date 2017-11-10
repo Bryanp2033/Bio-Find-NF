@@ -683,6 +683,756 @@ $(document).on("click", "#alphabetical-one", function(event){
     })
 })
 
+$(document).on("click", "#alphabetical-two", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-two",
+    }).done(function(data){
+       $("#time-era-two").empty();
 
 
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-two").append(div);
+        }
 
+    })
+})
+
+$(document).on("click", "#alphabetical-three", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-three",
+    }).done(function(data){
+       $("#time-era-three").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-three").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-four", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-four",
+    }).done(function(data){
+       $("#time-era-four").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-four").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-five", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-five",
+    }).done(function(data){
+       $("#time-era-five").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-five").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-six", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-six",
+    }).done(function(data){
+       $("#time-era-six").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-six").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-seven", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-seven",
+    }).done(function(data){
+       $("#time-era-seven").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-seven").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-eight", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-eight",
+    }).done(function(data){
+       $("#time-era-eight").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-eight").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-nine", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-nine",
+    }).done(function(data){
+       $("#time-era-nine").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-nine").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-ten", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-ten",
+    }).done(function(data){
+       $("#time-era-ten").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-ten").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-eleven", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-eleven",
+    }).done(function(data){
+       $("#time-era-eleven").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-eleven").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-twelve", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-twelve",
+    }).done(function(data){
+       $("#time-era-twelve").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-twelve").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-thirdteen", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-thirdteen",
+    }).done(function(data){
+       $("#time-era-thirdteen").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-thirdteen").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-fourteen", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-fourteen",
+    }).done(function(data){
+       $("#time-era-fourteen").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-fourteen").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-fiveteen", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-fiveteen",
+    }).done(function(data){
+       $("#time-era-fiveteen").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-fiveteen").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-sixteen", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-sixteen",
+    }).done(function(data){
+       $("#time-era-sixteen").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-sixteen").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-seventeen", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-seventeen",
+    }).done(function(data){
+       $("#time-era-seventeen").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-seventeen").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-eighteen", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-eighteen",
+    }).done(function(data){
+       $("#time-era-eighteen").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-eighteen").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-nineteen", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-nineteen",
+    }).done(function(data){
+       $("#time-era-nineteen").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-nineteen").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-twenty", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-twenty",
+    }).done(function(data){
+       $("#time-era-twenty").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-twenty").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-twentyone", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-twentyone",
+    }).done(function(data){
+       $("#time-era-twentyone").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-twentyone").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-twentytwo", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-twentytwo",
+    }).done(function(data){
+       $("#time-era-twentytwo").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-twentytwo").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-twentythree", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-twentythree",
+    }).done(function(data){
+       $("#time-era-twentythree").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-twentythree").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-twentyfour", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-twentyfour",
+    }).done(function(data){
+       $("#time-era-twentyfour").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-twentyfour").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-twentyfive", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-twentyfive",
+    }).done(function(data){
+       $("#time-era-twentyfive").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-twentyfive").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-twentysix", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-twentysix",
+    }).done(function(data){
+       $("#time-era-twentysix").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-twentysix").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-twentyseven", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-twentyseven",
+    }).done(function(data){
+       $("#time-era-twentyseven").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-twentyseven").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-twentyeight", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-twentyeight",
+    }).done(function(data){
+       $("#time-era-twentyeight").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-twentyeight").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-twentynine", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-twentynine",
+    }).done(function(data){
+       $("#time-era-twentynine").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-twentynine").append(div);
+        }
+
+    })
+})
+
+$(document).on("click", "#alphabetical-thirty", function(event){
+    event.preventDefault();
+
+    $.ajax({
+        method: "GET",
+        url: "/alphabetical-thirty",
+    }).done(function(data){
+       $("#time-era-thirty").empty();
+
+
+        for(var i = 0; i < data.length; i++){
+        console.log(data[i].full_name.charAt(0))
+        var div = $("<div id='history-template'>");
+        var span = $("<span class='history-letter'>");
+        var p = $("<p class='history-name'>")
+        var a = $("<a>")
+        a.attr("href", "/guest/" + data[i].full_name);
+        a.html(data[i].full_name);
+        $(p).append(a);
+        $(div).append(span, p);
+        $("#time-era-thirty").append(div);
+        }
+
+    })
+})
