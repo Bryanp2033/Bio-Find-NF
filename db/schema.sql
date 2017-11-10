@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS `users`(
     PRIMARY KEY(`id`)
 );
 
+-- History Data
 CREATE TABLE IF NOT EXISTS `historyData`(
     `article_id` INT(11),
     `full_name` VARCHAR(255),
@@ -37,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `historyData`(
     PRIMARY KEY(`article_id`)
 )
 
-
+-- Users to History relational table
 CREATE TABLE IF NOT EXISTS `UserstoHistory`(
     `id` INT(11) AUTO_INCREMENT NOT NULL,
     `historyData_article_id` INT NOT NULL,
