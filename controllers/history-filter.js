@@ -192,5 +192,179 @@ router.get("/default-one", function(req, res){
     })
 })
 
+router.get("/default-two", function(req, res){
+    history.ByDateTwo(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-three", function(req, res){
+    history.ByDateThree(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-four", function(req, res){
+    history.ByDateFour(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-five", function(req, res){
+    history.ByDateFive(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-six", function(req, res){
+    history.ByDateSix(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-seven", function(req, res){
+    history.ByDateSeven(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-eight", function(req, res){
+    history.ByDateEight(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-nine", function(req, res){
+    history.ByDateNine(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-ten", function(req, res){
+    history.ByDateTen(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-eleven", function(req, res){
+    history.ByDateEleven(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-twelve", function(req, res){
+    history.ByDateTwelve(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-thirdteen", function(req, res){
+    history.ByDateThirdteen(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-fourteen", function(req, res){
+    history.ByDateFourteen(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-fiveteen", function(req, res){
+    history.ByDateFiveteen(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-sixteen", function(req, res){
+    history.ByDateSixteen(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-seventeen", function(req, res){
+    history.ByDateSeventeen(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-eighteen", function(req, res){
+    history.ByDateEightteen(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-nineteen", function(req, res){
+    history.ByDateNineteen(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-twenty", function(req, res){
+    history.ByDateTwenty(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-twentyone", function(req, res){
+    history.ByDateTwentyOne(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-twentythree", function(req, res){
+    history.ByDateTwentyThree(function(data){
+        res.send(data);
+    })
+})
+
+
+router.get("/default-twentytwo", function(req, res){
+    history.ByDateTwentyTwo(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-twentyfour", function(req, res){
+    history.ByDateTwentyFour(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-twentyfive", function(req, res){
+    history.ByDateTwentyFive(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-twentysix", function(req, res){
+    history.ByDateTwentySix(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-twentyseven", function(req, res){
+    history.ByDateTwentySeven(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-twentyeight", function(req, res){
+    history.ByDateTwentyEight(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-twentynine", function(req, res){
+    history.ByDateTwentyNine(function(data){
+        res.send(data);
+    })
+})
+
+router.get("/default-thirty", function(req, res){
+    history.ByDateThirty(function(data){
+        res.send(data);
+    })
+})
 
 module.exports = router;
